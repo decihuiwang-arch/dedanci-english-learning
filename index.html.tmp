@@ -1,0 +1,98 @@
+<!-- Version: Sun Feb 22 03:55:44 CST 2026 -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英语学习 - 音形义分离法</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">英语学习</div>
+        <div class="nav-links">
+            <a href="index.html" class="active">首页</a>
+            <a href="learn.html">学习</a>
+            <a href="profile.html">我的</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="hero">
+            <h1>音形义分离学习法</h1>
+            <p class="subtitle">见词能读，听音能写，先音形，后释义</p>
+            <div class="cta-group">
+                <a href="learn.html" class="btn btn-primary">开始学习</a>
+                <a href="#" class="btn btn-secondary">了解方法</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>为什么选择音形义分离？</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>降低认知负荷</h3>
+                    <p>一次只学2样（音+形），比传统方法（音+形+义）更容易掌握</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>科学学习路径</h3>
+                    <p>第一阶段建立音形基础，第二阶段理解含义，循序渐进</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🧠</div>
+                    <h3>英语思维培养</h3>
+                    <p>用英英释义理解单词，避免中文翻译的中介</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-it-works">
+            <h2>学习流程</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>第一阶段：音形训练</h3>
+                    <p>只记拼写和发音，不记意思。看到词就能读，听到词就能写。</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>第二阶段：英英释义</h3>
+                    <p>用简单词解释复杂词，建立英语思维，深入理解含义。</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>综合应用</h3>
+                    <p>音形义结合，在真实语境中运用，真正掌握单词。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <h2>学习数据</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">已学单词</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">学习天数</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">0%</div>
+                    <div class="stat-label">准确率</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 英语学习 - 音形义分离法</p>
+    </footer>
+
+    <script src="js/error-handler.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

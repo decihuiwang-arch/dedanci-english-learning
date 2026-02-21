@@ -1,0 +1,522 @@
+[
+  {
+    "word": "hello",
+    "phonetic": "/həˈloʊ/",
+    "difficulty": 1
+  },
+  {
+    "word": "world",
+    "phonetic": "/wɜːrld/",
+    "difficulty": 1
+  },
+  {
+    "word": "apple",
+    "phonetic": "/ˈæpəl/",
+    "difficulty": 1
+  },
+  {
+    "word": "banana",
+    "phonetic": "/bəˈnænə/",
+    "difficulty": 1
+  },
+  {
+    "word": "computer",
+    "phonetic": "/kəmˈpjuːtər/",
+    "difficulty": 1
+  },
+  {
+    "word": "language",
+    "phonetic": "/ˈlæŋɡwɪdʒ/",
+    "difficulty": 1
+  },
+  {
+    "word": "learning",
+    "phonetic": "/ˈlɜːrnɪŋ/",
+    "difficulty": 1
+  },
+  {
+    "word": "practice",
+    "phonetic": "/ˈpræktɪs/",
+    "difficulty": 1
+  },
+  {
+    "word": "progress",
+    "phonetic": "/ˈprɑːɡres/",
+    "difficulty": 1
+  },
+  {
+    "word": "success",
+    "phonetic": "/səkˈses/",
+    "difficulty": 1
+  },
+  {
+    "word": "morning",
+    "phonetic": "/ˈmɔːrnɪŋ/",
+    "difficulty": 1
+  },
+  {
+    "word": "evening",
+    "phonetic": "/ˈiːvnɪŋ/",
+    "difficulty": 1
+  },
+  {
+    "word": "friend",
+    "phonetic": "/frend/",
+    "difficulty": 1
+  },
+  {
+    "word": "family",
+    "phonetic": "/ˈfæməli/",
+    "difficulty": 1
+  },
+  {
+    "word": "people",
+    "phonetic": "/ˈpiːpl/",
+    "difficulty": 1
+  },
+  {
+    "word": "today",
+    "phonetic": "/təˈdeɪ/",
+    "difficulty": 1
+  },
+  {
+    "word": "tomorrow",
+    "phonetic": "/təˈmɑːroʊ/",
+    "difficulty": 1
+  },
+  {
+    "word": "beautiful",
+    "phonetic": "/ˈbjuːtəfəl/",
+    "difficulty": 2
+  },
+  {
+    "word": "important",
+    "phonetic": "/ɪmˈpɔːrtənt/",
+    "difficulty": 1
+  },
+  {
+    "word": "different",
+    "phonetic": "/ˈdɪfrənt/",
+    "difficulty": 2
+  },
+  {
+    "word": "understand",
+    "phonetic": "/ˌʌndərˈstænd/",
+    "difficulty": 2
+  },
+  {
+    "word": "remember",
+    "phonetic": "/rɪˈmembər/",
+    "difficulty": 1
+  },
+  {
+    "word": "forget",
+    "phonetic": "/fərˈɡet/",
+    "difficulty": 2
+  },
+  {
+    "word": "easy",
+    "phonetic": "/ˈiːzi/",
+    "difficulty": 1
+  },
+  {
+    "word": "difficult",
+    "phonetic": "/ˈdɪfɪkəlt/",
+    "difficulty": 2
+  },
+  {
+    "word": "interesting",
+    "phonetic": "/ˈɪntrəstɪŋ/",
+    "difficulty": 2
+  },
+  {
+    "word": "exciting",
+    "phonetic": "/ɪkˈsaɪtɪŋ/",
+    "difficulty": 2
+  },
+  {
+    "word": "wonderful",
+    "phonetic": "/ˈwʌndərfəl/",
+    "difficulty": 2
+  },
+  {
+    "word": "amazing",
+    "phonetic": "/əˈmeɪzɪŋ/",
+    "difficulty": 2
+  },
+  {
+    "word": "excellent",
+    "phonetic": "/ˈeksələnt/",
+    "difficulty": 2
+  },
+  {
+    "word": "quickly",
+    "phonetic": "/ˈkwɪkli/",
+    "difficulty": 1
+  },
+  {
+    "word": "slowly",
+    "phonetic": "/ˈsloʊli/",
+    "difficulty": 1
+  },
+  {
+    "word": "carefully",
+    "phonetic": "/ˈkeərfəli/",
+    "difficulty": 2
+  },
+  {
+    "word": "together",
+    "phonetic": "/təˈɡeðər/",
+    "difficulty": 1
+  },
+  {
+    "word": "alone",
+    "phonetic": "/əˈloʊn/",
+    "difficulty": 1
+  },
+  {
+    "word": "happy",
+    "phonetic": "/ˈhæpi/",
+    "difficulty": 1
+  },
+  {
+    "word": "sad",
+    "phonetic": "/sæd/",
+    "difficulty": 1
+  },
+  {
+    "word": "angry",
+    "phonetic": "/ˈæŋɡri/",
+    "difficulty": 1
+  },
+  {
+    "word": "surprised",
+    "phonetic": "/sərˈpraɪzd/",
+    "difficulty": 2
+  },
+  {
+    "word": "tired",
+    "phonetic": "/ˈtaɪərd/",
+    "difficulty": 1
+  },
+  {
+    "word": "hungry",
+    "phonetic": "/ˈhʌŋɡri/",
+    "difficulty": 1
+  },
+  {
+    "word": "thirsty",
+    "phonetic": "/ˈθɜːrsti/",
+    "difficulty": 2
+  },
+  {
+    "word": "water",
+    "phonetic": "/ˈwɔːtər/",
+    "difficulty": 1
+  },
+  {
+    "word": "food",
+    "phonetic": "/fuːd/",
+    "difficulty": 1
+  },
+  {
+    "word": "house",
+    "phonetic": "/haʊs/",
+    "difficulty": 1
+  },
+  {
+    "word": "school",
+    "phonetic": "/skuːl/",
+    "difficulty": 1
+  },
+  {
+    "word": "book",
+    "phonetic": "/bʊk/",
+    "difficulty": 1
+  },
+  {
+    "word": "pencil",
+    "phonetic": "/ˈpensəl/",
+    "difficulty": 1
+  },
+  {
+    "word": "paper",
+    "phonetic": "/ˈpeɪpər/",
+    "difficulty": 1
+  },
+  {
+    "word": "write",
+    "phonetic": "/raɪt/",
+    "difficulty": 1
+  },
+  {
+    "word": "read",
+    "phonetic": "/riːd/",
+    "difficulty": 1
+  },
+  {
+    "word": "listen",
+    "phonetic": "/ˈlɪsn/",
+    "difficulty": 1
+  },
+  {
+    "word": "speak",
+    "phonetic": "/spiːk/",
+    "difficulty": 1
+  },
+  {
+    "word": "talk",
+    "phonetic": "/tɔːk/",
+    "difficulty": 1
+  },
+  {
+    "word": "walk",
+    "phonetic": "/wɔːk/",
+    "difficulty": 1
+  },
+  {
+    "word": "run",
+    "phonetic": "/rʌn/",
+    "difficulty": 1
+  },
+  {
+    "word": "jump",
+    "phonetic": "/dʒʌmp/",
+    "difficulty": 1
+  },
+  {
+    "word": "swim",
+    "phonetic": "/swɪm/",
+    "difficulty": 1
+  },
+  {
+    "word": "sleep",
+    "phonetic": "/sliːp/",
+    "difficulty": 1
+  },
+  {
+    "word": "wake",
+    "phonetic": "/weɪk/",
+    "difficulty": 1
+  },
+  {
+    "word": "eat",
+    "phonetic": "/iːt/",
+    "difficulty": 1
+  },
+  {
+    "word": "drink",
+    "phonetic": "/drɪŋk/",
+    "difficulty": 1
+  },
+  {
+    "word": "see",
+    "phonetic": "/siː/",
+    "difficulty": 1
+  },
+  {
+    "word": "look",
+    "phonetic": "/lʊk/",
+    "difficulty": 1
+  },
+  {
+    "word": "hear",
+    "phonetic": "/hɪər/",
+    "difficulty": 1
+  },
+  {
+    "word": "smell",
+    "phonetic": "/smel/",
+    "difficulty": 1
+  },
+  {
+    "word": "touch",
+    "phonetic": "/tʌtʃ/",
+    "difficulty": 1
+  },
+  {
+    "word": "feel",
+    "phonetic": "/fiːl/",
+    "difficulty": 1
+  },
+  {
+    "word": "think",
+    "phonetic": "/θɪŋk/",
+    "difficulty": 1
+  },
+  {
+    "word": "know",
+    "phonetic": "/noʊ/",
+    "difficulty": 1
+  },
+  {
+    "word": "learn",
+    "phonetic": "/lɜːrn/",
+    "difficulty": 1
+  },
+  {
+    "word": "teach",
+    "phonetic": "/tiːtʃ/",
+    "difficulty": 1
+  },
+  {
+    "word": "help",
+    "phonetic": "/help/",
+    "difficulty": 1
+  },
+  {
+    "word": "love",
+    "phonetic": "/lʌv/",
+    "difficulty": 1
+  },
+  {
+    "word": "like",
+    "phonetic": "/laɪk/",
+    "difficulty": 1
+  },
+  {
+    "word": "enjoy",
+    "phonetic": "/ɪnˈdʒɔɪ/",
+    "difficulty": 2
+  },
+  {
+    "word": "prefer",
+    "phonetic": "/prɪˈfɜːr/",
+    "difficulty": 2
+  },
+  {
+    "word": "want",
+    "phonetic": "/wɑːnt/",
+    "difficulty": 1
+  },
+  {
+    "word": "need",
+    "phonetic": "/niːd/",
+    "difficulty": 1
+  },
+  {
+    "word": "try",
+    "phonetic": "/traɪ/",
+    "difficulty": 1
+  },
+  {
+    "word": "hope",
+    "phonetic": "/hoʊp/",
+    "difficulty": 1
+  },
+  {
+    "word": "believe",
+    "phonetic": "/bɪˈliːv/",
+    "difficulty": 2
+  },
+  {
+    "word": "trust",
+    "phonetic": "/trʌst/",
+    "difficulty": 1
+  },
+  {
+    "word": "change",
+    "phonetic": "/tʃeɪndʒ/",
+    "difficulty": 2
+  },
+  {
+    "word": "improve",
+    "phonetic": "/ɪmˈpruːv/",
+    "difficulty": 2
+  },
+  {
+    "word": "develop",
+    "phonetic": "/dɪˈveləp/",
+    "difficulty": 2
+  },
+  {
+    "word": "create",
+    "phonetic": "/kriˈeɪt/",
+    "difficulty": 2
+  },
+  {
+    "word": "design",
+    "phonetic": "/dɪˈzaɪn/",
+    "difficulty": 2
+  },
+  {
+    "word": "build",
+    "phonetic": "/bɪld/",
+    "difficulty": 2
+  },
+  {
+    "word": "make",
+    "phonetic": "/meɪk/",
+    "difficulty": 1
+  },
+  {
+    "word": "start",
+    "phonetic": "/stɑːrt/",
+    "difficulty": 1
+  },
+  {
+    "word": "finish",
+    "phonetic": "/ˈfɪnɪʃ/",
+    "difficulty": 2
+  },
+  {
+    "word": "continue",
+    "phonetic": "/kənˈtɪnjuː/",
+    "difficulty": 2
+  },
+  {
+    "word": "begin",
+    "phonetic": "/bɪˈɡɪn/",
+    "difficulty": 2
+  },
+  {
+    "word": "end",
+    "phonetic": "/end/",
+    "difficulty": 1
+  },
+  {
+    "word": "already",
+    "phonetic": "/ɔːlˈredi/",
+    "difficulty": 2
+  },
+  {
+    "word": "always",
+    "phonetic": "/ˈɔːlweɪz/",
+    "difficulty": 1
+  },
+  {
+    "word": "never",
+    "phonetic": "/ˈnevər/",
+    "difficulty": 1
+  },
+  {
+    "word": "sometimes",
+    "phonetic": "/ˈsʌmtaɪmz/",
+    "difficulty": 2
+  },
+  {
+    "word": "usually",
+    "phonetic": "/ˈjuːʒuəli/",
+    "difficulty": 2
+  },
+  {
+    "word": "really",
+    "phonetic": "/ˈriːəli/",
+    "difficulty": 2
+  },
+  {
+    "word": "quite",
+    "phonetic": "/kwaɪt/",
+    "difficulty": 1
+  },
+  {
+    "word": "very",
+    "phonetic": "/ˈveri/",
+    "difficulty": 1
+  },
+  {
+    "word": "too",
+    "phonetic": "/tuː/",
+    "difficulty": 1
+  }
+]

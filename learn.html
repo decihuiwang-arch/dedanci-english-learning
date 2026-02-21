@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学习 - 英语学习</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">英语学习</div>
+        <div class="nav-links">
+            <a href="index.html">首页</a>
+            <a href="learn.html" class="active">学习</a>
+            <a href="profile.html">我的</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- 浏览器支持检查 -->
+        <section class="browser-support" id="browserSupportSection" style="display: none;">
+            <div class="support-message" id="speechSupport">检查浏览器支持...</div>
+        </section>
+
+        <section class="learning-mode">
+            <h2>选择学习模式</h2>
+            <div class="mode-cards">
+                <div class="mode-card active">
+                    <div class="mode-icon">🎯</div>
+                    <h3>第一阶段：音形训练</h3>
+                    <p>只记拼写和发音，不记意思</p>
+                    <button class="btn btn-primary" onclick="startLearning()">开始学习</button>
+                </div>
+                <div class="mode-card locked" id="phase2Card">
+                    <div class="mode-icon">📚</div>
+                    <h3>第二阶段：英英释义</h3>
+                    <p>解锁后可用，用英语理解英语</p>
+                    <button class="btn btn-secondary" disabled>锁定</button>
+                    <p class="lock-hint">学习100个单词后解锁</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="word-card" id="wordCard" style="display: none;">
+            <div class="word-header">
+                <h2 id="currentWord">hello</h2>
+                <span id="phonetic" class="phonetic">/həˈloʊ/</span>
+                <button class="audio-btn" onclick="playAudio()">🔊</button>
+            </div>
+
+            <!-- 发音练习区域 -->
+            <div class="practice-area" id="pronunciationArea">
+                <div class="mode-tabs">
+                    <button class="tab active" onclick="switchMode('read')">看词练习</button>
+                    <button class="tab" onclick="switchMode('spell')">听写练习</button>
+                </div>
+
+                <div id="readMode" class="practice-content">
+                    <p>听发音，然后跟读并录音检查</p>
+
+                    <div class="pronunciation-stats">
+                        <div class="pronunciation-stat">
+                            <span class="stat-label">发音准确率:</span>
+                            <span class="stat-value" id="pronunciationAccuracy">--</span>
+                        </div>
+                        <div class="pronunciation-stat">
+                            <span class="stat-label">尝试次数:</span>
+                            <span class="stat-value" id="pronunciationAttempts">0</span>
+                        </div>
+                        <div class="pronunciation-stat">
+                            <span class="stat-label">成功次数:</span>
+                            <span class="stat-value" id="pronunciationSuccesses">0</span>
+                        </div>
+                    </div>
+
+                    <div class="recording-controls">
+                        <button id="recordBtn" class="record-btn" onclick="startRecording()">
+                            🎤 开始录音
+                        </button>
+                        <button id="stopBtn" class="stop-btn" onclick="stopRecording()" style="display: none;">
+                            ⏹ 停止
+                        </button>
+                    </div>
+
+                    <div id="recordStatus" class="record-status">
+                        点击开始录音
+                    </div>
+
+                    <p id="feedback" class="feedback"></p>
+                </div>
+
+                <div id="spellMode" class="practice-content" style="display: none;">
+                    <p>听发音，拼写单词</p>
+                    <input type="text" id="spellInput" placeholder="输入拼写">
+                    <button class="btn btn-primary" onclick="checkSpelling()">检查拼写</button>
+                    <p id="spellFeedback" class="feedback"></p>
+                </div>
+            </div>
+
+            <div class="progress">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+                </div>
+                <p><span id="currentIndex">0</span> / <span id="totalWords">10</span></p>
+            </div>
+
+            <div class="navigation">
+                <button class="btn btn-secondary" onclick="previousWord()">上一个</button>
+                <button class="btn btn-primary" onclick="nextWord()">下一个</button>
+                <button class="btn btn-mac" onclick="sendToMac()">
+                    📱 同步到 Mac
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 英语学习 - 音形义分离法</p>
+    </footer>
+
+    <script src="js/error-handler.js"></script>
+    <script src="js/speech.js"></script>
+    <script src="js/learn.js"></script>
+    <script>
+        // iMessage 服务器配置
+        const IMESSAGE_SERVER_URL = 'http://localhost:3000';
+        const MAC_USER = 'zhong'; // 替换为你的 Mac 用户名
+
+        // 发送学习进度到 Mac
+        function sendToMac() {
+            const stats = JSON.parse(localStorage.getItem('learningStats') || '{}');
+            const wordCount = stats.learnedWords || 0;
+            const accuracy = stats.accuracy || 0;
+
+            const message = `学习进度更新：已完成 ${wordCount} 个单词，准确率 ${accuracy}%`;
+
+            showToast('📱 正在同步到 Mac...');
+
+            fetch(`${IMESSAGE_SERVER_URL}/send-message`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    recipient: MAC_USER,
+                    message: message
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    showToast('✓ 已同步到 Mac');
+                } else {
+                    showToast('✗ 同步失败：' + (data.error || '未知错误'));
+                }
+            })
+            .catch(error => {
+                console.error('同步失败:', error);
+                showToast('✗ 网络错误，请检查服务器是否运行');
+            });
+        }
+    </script>
+</body>
+</html>

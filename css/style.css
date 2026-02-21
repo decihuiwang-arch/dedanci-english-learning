@@ -1,0 +1,1126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #2196F3;
+    --dark-color: #333;
+    --light-color: #f5f5f5;
+    --success-color: #4CAF50;
+    --error-color: #f44336;
+    --mac-color: #2196F3; /* iMessage 蓝 */
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--dark-color);
+    background-color: var(--light-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navigation */
+.navbar {
+    background-color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--dark-color);
+    transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.cta-group {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* Buttons */
+.btn {
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+    box-shadow: 0 2px 4px rgba(76, 175, 80, 0.2);
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
+}
+
+.btn-secondary {
+    background-color: white;
+    color: var(--dark-color);
+    border: 2px solid var(--primary-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--light-color);
+    transform: translateY(-2px);
+}
+
+.btn-mac {
+    background-color: var(--mac-color);
+    color: white;
+    border: none;
+    box-shadow: 0 2px 4px rgba(33, 150, 243, 0.2);
+}
+
+.btn-mac:hover {
+    background-color: #1a78c2;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(33, 150, 243, 0.3);
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Features */
+.features {
+    margin-bottom: 3rem;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+/* How it works */
+.how-it-works {
+    margin-bottom: 3rem;
+}
+
+.how-it-works h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.step {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.step:hover {
+    transform: translateY(-3px);
+}
+
+.step-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.step h3 {
+    margin-bottom: 1rem;
+}
+
+/* Stats */
+.stats {
+    margin-bottom: 3rem;
+}
+
+.stats h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    text-align: center;
+}
+
+.stat-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.stat-item:hover {
+    transform: scale(1.05);
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Learning Mode */
+.learning-mode {
+    margin-bottom: 3rem;
+}
+
+.learning-mode h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.mode-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.mode-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.mode-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+}
+
+.mode-card.active {
+    border-color: var(--primary-color);
+    background-color: #f0fdf4;
+}
+
+.mode-card.locked {
+    opacity: 0.7;
+}
+
+.mode-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.mode-card h3 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+/* Word Card */
+.word-card {
+    background: white;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.word-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.word-display h2 {
+    font-size: 3rem;
+    margin: 0;
+    color: var(--primary-color);
+}
+
+.audio-btn {
+    font-size: 2rem;
+    background: none;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.audio-btn:hover {
+    background-color: var(--primary-color);
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(76, 175, 80, 0.2);
+}
+
+/* Practice Area */
+.practice-area {
+    margin-bottom: 2rem;
+}
+
+.mode-tabs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.tab {
+    padding: 0.8rem 1.5rem;
+    border: 2px solid var(--primary-color);
+    background: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 500;
+}
+
+.tab:hover {
+    background-color: #f0fdf4;
+}
+
+.tab.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.practice-content {
+    text-align: center;
+}
+
+.practice-content p {
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+.practice-content input {
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    width: 300px;
+    margin-bottom: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.practice-content input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
+}
+
+/* Pronunciation Practice Area */
+.pronunciation-stats {
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.pronunciation-stat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.pronunciation-stat:last-child {
+    border-bottom: none;
+}
+
+.pronunciation-stat .stat-label {
+    font-size: 1rem;
+    color: #666;
+}
+
+.pronunciation-stat .stat-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* Recording Controls */
+.recording-controls {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.record-btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(76, 175, 80, 0.2);
+}
+
+.record-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(76, 175, 80, 0.3);
+}
+
+.record-btn.recording {
+    background-color: #f44336;
+    animation: pulse 1.5s infinite, recordingPulseRing 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+    box-shadow: 0 4px 12px rgba(244, 67, 54, 0.4);
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.stop-btn {
+    background-color: #666;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.stop-btn:hover {
+    background-color: #444;
+    transform: scale(1.05);
+}
+
+/* Record Status */
+.record-status {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.record-status.recording {
+    background-color: #ffebee;
+    animation: flash 1.5s infinite;
+}
+
+@keyframes flash {
+    0%, 100% {
+        background-color: #ffebee;
+    }
+    50% {
+        background-color: #ffd6d6;
+    }
+}
+
+/* Mode Card Lock Hint */
+.lock-hint {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+/* Feedback Enhancements */
+.feedback {
+    margin-top: 1.5rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    transition: all 0.3s ease;
+}
+
+.feedback.success {
+    background-color: #d4edda;
+    color: #155724;
+    animation: slideIn 0.3s ease;
+}
+
+.feedback.warning {
+    background-color: #fff3cd;
+    color: #856404;
+    animation: slideIn 0.3s ease;
+}
+
+.feedback.error {
+    background-color: #fee;
+    color: #c33;
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Word Card with Practice Area */
+.word-card {
+    background: white;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Practice Area with Pronunciation */
+.practice-area {
+    margin-bottom: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .word-display h2 {
+        font-size: 2rem;
+    }
+
+    .practice-content input {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .mode-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .record-btn,
+    .stop-btn {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .pronunciation-stats {
+        padding: 1rem;
+    }
+
+    .pronunciation-stat {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-start;
+    }
+
+    .recording-controls {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Navigation Buttons with Mac button */
+    .navigation {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
+/* ===== 增强动画效果 ===== */
+
+/* 单词切换动画 - 平滑淡入 */
+.word-transition {
+    animation: wordFadeIn 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes wordFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-15px) scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* 成功动画 - 庆祝效果 */
+.success-animation {
+    animation: successPulse 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes successPulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.08);
+    }
+    25%, 75% {
+        transform: scale(1.04);
+    }
+}
+
+/* 录音脉冲动画 - 增强版 */
+.recording-pulse {
+    animation: recordingPulseRing 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+@keyframes recordingPulseRing {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(244, 67, 54, 0.7);
+    }
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 15px rgba(244, 67, 54, 0);
+    }
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(244, 67, 54, 0);
+    }
+}
+
+/* 按钮点击涟漪效果 */
+.btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.btn:active::after {
+    width: 300px;
+    height: 300px;
+}
+
+/* 进度条动画 */
+.progress-fill {
+    transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 数字计数动画 */
+.stat-number {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.stat-number.updated {
+    animation: countUp 0.5s ease;
+}
+
+@keyframes countUp {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* 输入框焦点动画增强 */
+input:focus {
+    animation: inputFocus 0.3s ease;
+}
+
+@keyframes inputFocus {
+    0% {
+        box-shadow: 0 0 0 0 rgba(76, 175, 80, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
+    }
+}
+
+/* 卡片悬停增强效果 */
+.feature-card,
+.mode-card,
+.stat-item {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 加载动画 */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(76, 175, 80, 0.3);
+    border-radius: 50%;
+    border-top-color: var(--primary-color);
+    animation: spin 1s linear infinite;
+}
+
+/* 震动动画（错误提示）*/
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+
+.shake {
+    animation: shake 0.5s ease;
+}
+
+/* 渐显动画 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease;
+}
+
+/* 警告样式增强 */
+.support-message.warning {
+    background-color: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: 0.75rem 1rem;
+    margin-top: 1rem;
+    border-radius: 4px;
+    animation: slideIn 0.3s ease;
+}
+
+/* 音频按钮播放动画 */
+.audio-btn.playing {
+    animation: audioPulse 0.3s ease;
+}
+
+@keyframes audioPulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.7);
+    }
+    50% {
+        transform: scale(1.15);
+        box-shadow: 0 0 0 10px rgba(76, 175, 80, 0);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(76, 175, 80, 0);
+    }
+}
+
+/* ===== 学习分析报告样式 ===== */
+
+/* 报告模态框 */
+.report-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 2rem;
+    animation: fadeIn 0.3s ease;
+}
+
+.report-modal.fade-out {
+    animation: fadeOut 0.3s ease forwards;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+.analytics-report {
+    background: white;
+    border-radius: 15px;
+    max-width: 800px;
+    max-height: 80vh;
+    overflow-y: auto;
+    padding: 2rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    animation: slideUp 0.3s ease;
+}
+
+.analytics-report h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.report-section {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.report-section:last-of-type {
+    border-bottom: none;
+}
+
+.report-section h3 {
+    color: var(--dark-color);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+/* 总览卡片 */
+.summary-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.summary-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.summary-value {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.summary-label {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* 弱项单词列表 */
+.weak-words-list {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.weak-word-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+    border-left: 4px solid var(--error-color);
+}
+
+.weak-word {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.weak-accuracy {
+    font-weight: bold;
+    color: var(--error-color);
+}
+
+.weak-attempts {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* 建议列表 */
+.recommendations-list {
+    display: grid;
+    gap: 1rem;
+}
+
+.recommendation-item {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid;
+}
+
+.recommendation-item.priority-high {
+    background: #fee;
+    border-color: var(--error-color);
+}
+
+.recommendation-item.priority-medium {
+    background: #fff3cd;
+    border-color: #ffc107;
+}
+
+.recommendation-item.priority-low {
+    background: #d4edda;
+    border-color: var(--success-color);
+}
+
+.recommendation-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.recommendation-content h4 {
+    margin: 0 0 0.5rem 0;
+    color: var(--dark-color);
+}
+
+.recommendation-content p {
+    margin: 0;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* 报告操作按钮 */
+.report-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+/* ===== 全局错误处理样式 ===== */
+
+/* 错误提示 Toast */
+.error-toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #fff;
+    border-left: 4px solid var(--error-color);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    z-index: 9999;
+    animation: slideInRight 0.3s ease;
+    max-width: 400px;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.error-toast.fade-out {
+    animation: fadeOutRight 0.3s ease forwards;
+}
+
+@keyframes fadeOutRight {
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+.error-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.error-message {
+    flex: 1;
+    color: var(--dark-color);
+    font-size: 0.95rem;
+}
+
+.error-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #999;
+    cursor: pointer;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: all 0.2s;
+    flex-shrink: 0;
+}
+
+.error-close:hover {
+    background: #f0f0f0;
+    color: var(--dark-color);
+}

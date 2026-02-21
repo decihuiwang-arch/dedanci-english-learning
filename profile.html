@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的 - 英语学习</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">英语学习</div>
+        <div class="nav-links">
+            <a href="index.html">首页</a>
+            <a href="learn.html">学习</a>
+            <a href="profile.html" class="active">我的</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="user-info">
+            <div class="avatar">👤</div>
+            <h2>zhong</h2>
+            <p>学习坚持天数：0天</p>
+        </section>
+
+        <section class="stats-detail">
+            <h2>学习统计</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">已学单词</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">学习时长</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">0%</div>
+                    <div class="stat-label">准确率</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="progress-section">
+            <h2>学习进度</h2>
+            <div class="phase-progress">
+                <div class="phase">
+                    <div class="phase-header">
+                        <h3>第一阶段：音形训练</h3>
+                        <span class="phase-status">进行中</span>
+                    </div>
+                    <div class="phase-bar">
+                        <div class="phase-fill" style="width: 0%"></div>
+                    </div>
+                    <p class="phase-info">已掌握 0 / 100 个单词</p>
+                </div>
+                <div class="phase">
+                    <div class="phase-header">
+                        <h3>第二阶段：英英释义</h3>
+                        <span class="phase-status locked">锁定</span>
+                    </div>
+                    <div class="phase-bar">
+                        <div class="phase-fill" style="width: 0%"></div>
+                    </div>
+                    <p class="phase-info">完成第一阶段后解锁</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="achievements">
+            <h2>成就徽章</h2>
+            <div class="badge-grid">
+                <div class="badge locked">
+                    <div class="badge-icon">🏆</div>
+                    <p>初学者</p>
+                    <span class="badge-desc">学会10个单词</span>
+                </div>
+                <div class="badge locked">
+                    <div class="badge-icon">🔥</div>
+                    <p>连续7天</p>
+                    <span class="badge-desc">连续学习7天</span>
+                </div>
+                <div class="badge locked">
+                    <div class="badge-icon">⭐</div>
+                    <p>百词达人</p>
+                    <span class="badge-desc">学会100个单词</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 英语学习 - 音形义分离法</p>
+    </footer>
+
+    <script src="js/error-handler.js"></script>
+    <script src="js/profile.js"></script>
+</body>
+</html>
